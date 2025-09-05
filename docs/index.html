@@ -17,7 +17,29 @@
       background-color: #4f46e5;
       color: white;
       padding: 1rem;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+    }
+    .logo-container {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo-container img {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+      transition: transform 0.2s ease-in-out;
+      background-color: white;
+      border-radius: 5px;
+      padding: 3px;
+    }
+    .logo-container img:hover {
+      transform: scale(1.08);
     }
     main {
       max-width: 700px;
@@ -70,8 +92,16 @@
 </head>
 <body>
   <header>
+    <!-- Contenedor de logos -->
+    <div class="logo-container">
+      <img src="logo1.png" alt="Logo 1" />
+      <img src="logo2.png" alt="Logo 2" />
+      <img src="logo3.png" alt="Logo 3" />
+      <img src="logo4.png" alt="Logo 4" />
+    </div>
     <h2>Universidad · Investigación apoyada por el CIS</h2>
   </header>
+
   <main>
     <h1>¡Participa en nuestro Focus Group sobre Juventud!</h1>
     <p>
@@ -104,6 +134,7 @@
     </p>
     <a class="cta" href="mailto:XXX@XXX.XX?subject=Quiero%20participar%20en%20el%20focus%20group&body=Hola%2C%20me%20gustar%C3%ADa%20participar%20en%20el%20focus%20group.">Quiero participar</a>
   </main>
+
   <footer>
     Proyecto de investigación de la universidad con apoyo del CIS.
   </footer>
